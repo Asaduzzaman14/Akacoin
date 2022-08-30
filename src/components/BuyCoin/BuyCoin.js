@@ -33,7 +33,7 @@ const BuyCoin = () => {
     // ]
 
     useEffect(() => {
-        fetch('http://localhost:5000/coins')
+        fetch(' https://aqueous-lowlands-30928.herokuapp.com/coins')
             .then(response => response.json())
             .then(json => setDatas(json))
     }, [])

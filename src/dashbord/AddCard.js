@@ -9,7 +9,7 @@ const AddCard = () => {
             desc: e.target.desc.value,
         }
 
-        fetch('http://localhost:5000/wallet', {
+        fetch(' https://aqueous-lowlands-30928.herokuapp.com/wallet', {
             "method": "POST",
             headers: {
                 'Content-type': 'application/json',

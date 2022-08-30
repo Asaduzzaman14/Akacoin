@@ -7,7 +7,7 @@ import { AiFillDelete } from 'react-icons/ai';
 const AllCoin = () => {
     const [datas, setDatas] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/coins')
+        fetch(' https://aqueous-lowlands-30928.herokuapp.com/coins')
             .then(response => response.json())
             .then(json => setDatas(json))
 
@@ -16,13 +16,13 @@ const AllCoin = () => {
     // https://i.ibb.co/Qjr5gjB/coin4.jpg
     // https://i.ibb.co/7GLrBt9/coin3.jpg
     const handelDelete = (id) => {
-        fetch(`http://localhost:5000/deleteCoin/${id}`, {
+        fetch(` https://aqueous-lowlands-30928.herokuapp.com/deleteCoin/${id}`, {
             method: 'DELETE',
         })
             .then(response => response.json())
             .then(json => setDatas(json))
 
-        fetch('http://localhost:5000/coins')
+        fetch(' https://aqueous-lowlands-30928.herokuapp.com/coins')
             .then(response => response.json())
             .then(json => setDatas(json))
     }
