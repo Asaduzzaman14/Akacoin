@@ -1,21 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import { Route, Routes } from 'react-router-dom';
+import Learn from './components/Learn';
 import Navbar from './components/Navbar/Navbar';
-import Akacoin from './components/Akacoin/Akacoin';
-import Banner from './components/Banner/Banner';
-import Wallets from './components/Wallet/Wallets';
-import Guide from './components/Guide/Guide';
-import Footer from './components/Footer/Footer';
+import Buy from './components/Buy';
+import Community from './components/Community';
+import Dashbord from './dashbord/Dashbord';
+import AddCard from './dashbord/AddCard';
+import MyCart from './dashbord/MyCart';
+import AllCoin from './dashbord/AllCoin';
+import AddCoin from './dashbord/AddCoin';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Banner />
-      <Akacoin />
-      <Wallets />
-      <Guide />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Home />} ></Route>
+        <Route path="/learn" element={<Learn />} ></Route>
+        <Route path="/buy" element={<Buy />} ></Route>
+        <Route path="/community" element={<Community />} ></Route>
+
+        <Route path="dashbord" element={<Dashbord />} >
+
+          <Route path='addcard' element={<AddCard />} ></Route>
+          <Route path='mycard' element={<MyCart />} ></Route>
+          <Route path='allcoin' element={<AllCoin />} ></Route>
+          <Route path='addcoin' element={<AddCoin />} ></Route>
+
+        </Route>
+
+
+
+
+
+
+
+      </Routes>
     </div>
   );
 }

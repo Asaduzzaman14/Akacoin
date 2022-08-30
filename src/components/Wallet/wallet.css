@@ -9,6 +9,11 @@
     position: relative;
 }
 
+.wallet-card:nth-child(2) {
+    background-color: rgba(255, 212, 86, 1);
+}
+
+
 .wallet-card p {
     font-size: 16px;
     line-height: 28px;
@@ -19,13 +24,6 @@
     z-index: 1;
 }
 
-.rectangle3 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 15px;
-}
-
 .bottom {
     position: absolute;
     bottom: 52px;
@@ -33,6 +31,18 @@
     z-index: 2;
 
 }
+
+.rectangle3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 15px;
+}
+
+.rectangle3:nth-child(2) {
+    background-color: #fff;
+}
+
 
 .rectangle1 {
     position: absolute;
@@ -45,4 +55,16 @@
     position: absolute;
     right: 0;
     bottom: 130px;
+}
+
+.rectangle4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.rectangle {
+    position: absolute;
+    right: 0;
+    bottom: 200px;
 }

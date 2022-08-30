@@ -4,6 +4,7 @@ import hand from "../../images/Hand Hold Bitcoin.png"
 import laptop from "../../images/Laptop.png"
 import machin from "../../images/Machine.png"
 import Summery from './Summery';
+import AkacoinAbout from './AkacoinAbout';
 
 const Guide = () => {
 
@@ -36,9 +37,9 @@ const Guide = () => {
             <div className='container '>
                 <h2 className='title'>Quick Start Guide</h2>
 
-                <div className='row guid-container d-flex justify-content-center '>
-                    {datas.map(data => {
-                        return <div className='guid col-12 col-lg-6 col-lg-6 d-flex gap-3 mb-4 mt-5'>
+                <div className='row guide-container d-flex justify-content-center '>
+                    {datas.map((data, index) => {
+                        return <div key={index} className='guide col-12 col-lg-6 col-lg-6 d-flex gap-3 mb-4 mt-5'>
                             <div className='img-container'>
                                 <img src={data.img} alt="" />
                             </div>
@@ -55,6 +56,7 @@ const Guide = () => {
 
                 </div>
             </div>
+            <AkacoinAbout />
             <Summery></Summery>
         </>
     );
