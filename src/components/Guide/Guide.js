@@ -39,12 +39,12 @@ const Guide = () => {
 
                 <div className='row guide-container d-flex justify-content-center '>
                     {datas.map((data, index) => {
-                        return <div key={index} className='guide col-12 col-lg-6 col-lg-6 d-flex gap-3 mb-4 mt-5'>
+                        return <div key={index} className='guide col-12 col-lg-6 col-lg-6 d-flex gap-3 mb-4 mt-5 w-100'>
                             <div className='img-container'>
-                                <img src={data.img} alt="" />
+                                <img className='w-100' src={data.img} alt="" />
                             </div>
                             <div className="guid-detail w-100 lg:w-50">
-                                <h2>{data.title}</h2>
+                                <h2 >{data.title}</h2>
                                 <p>{data.desc}</p>
                             </div>
 

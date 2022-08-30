@@ -1,5 +1,11 @@
 import React from 'react';
 import './Footer.css'
+import image from "../../images/Image.png"
+import { AiFillGithub } from 'react-icons/ai';
+import { BsDiscord } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
+import { AiFillLinkedin } from 'react-icons/ai';
+
 
 const Footer = () => {
     return (
@@ -10,11 +16,13 @@ const Footer = () => {
 
                     {/* 1 */}
                     <div className='col-12 col-lg-4 my-3'>
-                        <img src="" alt="" />
+                        <img className='footer-logo' src={image} alt="" />
                         <li>Living Ecosystem Decentralized Token</li>
-                        <div>
-                            <h4>icon 1</h4>
-                            <h4>icon 2</h4>
+                        <div className='d-flex gap-2 mt-3 fs-2'>
+                            <AiFillGithub />
+                            <BsDiscord />
+                            <BsFacebook />
+                            <AiFillLinkedin />
                         </div>
                     </div>
 

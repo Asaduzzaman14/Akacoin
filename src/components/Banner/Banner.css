@@ -21,7 +21,9 @@
 }
 
 .button-container {
-    display: flex;
+    /* display: flex; */
+    padding: 90px 0 150px 0;
+
 }
 
 .button {
@@ -29,7 +31,6 @@
     border-radius: 40px;
     border: none;
     font-size: 16px;
-    margin: 90px 0 150px 0;
 }
 
 .button1 {
@@ -41,4 +42,16 @@
     background-color: rgba(255, 255, 255, 1);
 
 
+}
+
+@media (max-width: 700px) {
+    .button-container {
+        margin-bottom: 0px;
+    }
+
+    .button {
+        padding: 7px 20px;
+        margin-bottom: 10px;
+
+    }
 }

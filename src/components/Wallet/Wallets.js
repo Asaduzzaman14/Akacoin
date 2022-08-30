@@ -14,21 +14,22 @@ import Rectangle6 from "../../images/Frame 1.png"
 
 
 import "./wallet.css"
+import { BsArrowRight } from 'react-icons/bs';
 
 
 const Wallets = () => {
     return (
-        <div className='container'>
+        <div className='container p-2'>
             <h2 className='title'>Choose Your Wallets</h2>
 
             <div className='row d-flex justify-content-center'>
                 {/* card 1 */}
 
-                <div className='wallet-card col-12 col-lg-4'>
+                <div className='wallet-card   col-12 col-lg-4 '>
                     <img className='rectangle3' src={Rectangle3} alt="" />
                     <div className='d-flex mb-3 gap-3'>
                         <img className='' src={pologon2} alt="" />
-                        <h2 className='card-title'>AkaWallet</h2>
+                        <h2 className='card-title'>AkaWallet  <BsArrowRight /></h2>
                     </div>
                     <div>
                         <p>Start exploring blockchain applications in seconds. Trusted by over 1 million users worldwide</p>
@@ -38,7 +39,7 @@ const Wallets = () => {
                         <img src={vactor1} alt="" />
                         <img src={vactor2} alt="" />
                     </div>
-                    <p className='fs-6 bottom'>Choose Wallet</p>
+                    <p className='fs-6 bottom'>Choose Wallet  <BsArrowRight /></p>
                     <img className='rectangle1' src={Rectangle1} alt="" />
                     <img className='rectangle2' src={Rectangle2} alt="" />
                 </div>
@@ -59,7 +60,7 @@ const Wallets = () => {
                         <img src={vactor1} alt="" />
                         <img src={vactor2} alt="" />
                     </div>
-                    <p className='fs-6 bottom'>Choose Wallet</p>
+                    <p className='fs-6 bottom'>Choose Wallet  <BsArrowRight /></p>
                     <img className='rectangle1' src={Rectangle1} alt="" />
                     <img className='rectangle' src={Rectangle5} alt="" />
                     {/* <img className='rectangle4' src={Rectangle4} alt="" /> */}
@@ -81,7 +82,7 @@ const Wallets = () => {
                         <img src={vactor1} alt="" />
                         <img src={vactor2} alt="" />
                     </div>
-                    <p className='fs-6 bottom'>Choose Wallet</p>
+                    <p className='fs-6 bottom'>Choose Wallet  <BsArrowRight /></p>
                     <img className='rectangle1' src={Rectangle1} alt="" />
                     <img className='rectangle2' src={Rectangle2} alt="" />
                 </div>

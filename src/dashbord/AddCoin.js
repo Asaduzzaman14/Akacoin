@@ -6,7 +6,7 @@ const AddCoin = () => {
         e.preventDefault()
         const newCoin = {
             name: e.target.name.value,
-            link: e.target.link.value,
+            img: e.target.link.value,
         }
 
         fetch('http://localhost:5000/coin', {
@@ -18,7 +18,6 @@ const AddCoin = () => {
         })
             .then(res => res.json())
             .then(data => {
-                // toast("New product added")
                 e.target.reset()
             })
 

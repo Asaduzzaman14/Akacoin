@@ -8,7 +8,7 @@ const Dashbord = () => {
                 {/* <!-- Sidebar --> */}
                 <div class="" id="sidebar-wrapper">
                     <div class="bg-primary list-group list-group-flush my-3">
-                        <Link to="addcard" class="list-group-item  fw-bold">ADD CARD</Link>
+                        <Link to="addcard" class="list-group-item  fw-bold">ADD WALLET</Link>
                         <Link to="mycard" class="list-group-item  fw-bold">MY CARD</Link>
                         <Link to="mycard" class="list-group-item  fw-bold">ADMIN</Link>
                         <Link to="allcoin" class="list-group-item  fw-bold">ALL COIN</Link>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GrUpdate } from 'react-icons/gr';
 import { AiFillDelete } from 'react-icons/ai';
 
@@ -6,11 +6,26 @@ import { AiFillDelete } from 'react-icons/ai';
 
 const AllCoin = () => {
     const [datas, setDatas] = useState([])
-    fetch('http://localhost:5000/coins')
-        .then(response => response.json())
-        .then(json => setDatas(json))
+    useEffect(() => {
+        fetch('http://localhost:5000/coins')
+            .then(response => response.json())
+            .then(json => setDatas(json))
 
+    }, [])
 
+    // https://i.ibb.co/Qjr5gjB/coin4.jpg
+    // https://i.ibb.co/7GLrBt9/coin3.jpg
+    const handelDelete = (id) => {
+        fetch(`http://localhost:5000/deleteCoin/${id}`, {
+            method: 'DELETE',
+        })
+            .then(response => response.json())
+            .then(json => setDatas(json))
+
+        fetch('http://localhost:5000/coins')
+            .then(response => response.json())
+            .then(json => setDatas(json))
+    }
 
     return (
         <div>
@@ -32,7 +47,7 @@ const AllCoin = () => {
                                 <th scope="row">{index + 1}</th>
                                 <td className='w-25'>{data.name}</td>
                                 <td className=''><img className='w-25' src={data.img} alt="" /></td>
-                                <td className='fs-5 d-flex gap-3'>   <GrUpdate /> <AiFillDelete className='text-danger' /> </td>
+                                <td className='fs-5 d-flex gap-3'>   <GrUpdate /> <AiFillDelete onClick={() => handelDelete(data._id)} className='text-danger' /> </td>
                             </tr>
 
                         })

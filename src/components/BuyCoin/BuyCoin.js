@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import coin1 from "../../images/coin1.jpg"
 import coin2 from "../../images/coin2.jpg"
 import coin3 from "../../images/coin3.jpg"
@@ -32,13 +32,16 @@ const BuyCoin = () => {
     //     },
     // ]
 
-    fetch('http://localhost:5000/coins')
-        .then(response => response.json())
-        .then(json => setDatas(json))
+    useEffect(() => {
+        fetch('http://localhost:5000/coins')
+            .then(response => response.json())
+            .then(json => setDatas(json))
+    }, [])
+
 
     return (
-        <div className='container'>
-            <h2>Buy your coin</h2>
+        <div className='container mt-5'>
+            <h2 className='mb-4 text-center'>Buy your coin</h2>
             <div className="row d-flex justify-content-center gap-3">
                 {
                     datas.map(data => {
