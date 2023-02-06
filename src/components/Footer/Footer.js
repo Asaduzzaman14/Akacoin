@@ -9,7 +9,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 
 const Footer = () => {
     return (
-        <div div className='container'>
+        <div className='container'>
             <div className='footer'>
 
                 <div className='row'>

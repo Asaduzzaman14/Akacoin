@@ -15,3 +15,10 @@
     font-size: 18px;
     line-height: 18px;
 }
+
+.watch {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(175, 172, 172, 0.519);
+}

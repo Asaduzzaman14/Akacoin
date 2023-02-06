@@ -27,11 +27,11 @@ const Banner = () => {
                         </div>
                     </div>
 
-                    <div className='col-12 col-lg-6 '>
+                    <div className='col-12 col-lg-6  position-relative'>
+                        <img className='position-absolute end-0 top-20' src={Bitcoin2} alt="" />
 
-                        {/* <img className='position-absolute start-100 bottom-50 ' src={Bitcoin1} alt="" />
-                            <img className='position-absolute end-0 top-0 ' src={Bitcoin2} alt="" />
-                            <img className='position-absolute to-50 end-50 ' src={Bitcoin3} alt="" /> */}
+                        <img className='position-absolute start-0 top-20 ' src={Bitcoin1} alt="" />
+                        <img className='position-absolute top-50 start-30 ' src={Bitcoin3} alt="" />
                         <img className='w-100' src={Plant} alt="" />
 
                     </div>

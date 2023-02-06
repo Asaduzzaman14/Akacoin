@@ -7,6 +7,7 @@ import vactor2 from "../../images/Vector (2).png"
 import Rectangle1 from "../../images/Rectangle 22.png"
 import Rectangle2 from "../../images/Rectangle 23.png"
 import Rectangle3 from "../../images/Rectangle 24.png"
+import Rectangle35 from "../../images/Rectangle 35.png"
 // 
 import Rectangle4 from "../../images/Rectangle 30.png"
 import Rectangle5 from "../../images/Rectangle 27.png"
@@ -47,7 +48,7 @@ const Wallets = () => {
 
                 {/* card 2*/}
                 <div className='wallet-card  col-12 col-lg-4'>
-                    <img className='rectangle3' src={Rectangle4} alt="" />
+                    <img className='rectangle3' src={Rectangle35} alt="" />
                     <div className='d-flex mb-3 gap-3'>
                         <img className='' src={pologon2} alt="" />
                         <h2 className='card-title'>AkaSafe</h2>

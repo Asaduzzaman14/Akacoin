@@ -7,36 +7,36 @@ import './BuyCoin.css'
 
 
 const BuyCoin = () => {
-    const [datas, setDatas] = useState([])
+    // const [datas, setDatas] = useState([])
 
-    // const datas = [
-    //     {
-    //         "_id": "1",
-    //         "img": "https://i.ibb.co/rdFJFMR/coin1.jpg",
-    //         "name": "Gold-color-bitcoin"
-    //     },
-    //     {
-    //         "_id": "2",
-    //         "img": "https://i.ibb.co/gv0KbYb/coin2.jpg",
-    //         "name": "Gold-color-bitcoin"
-    //     },
-    //     {
-    //         "_id": "3",
-    //         "img": "https://i.ibb.co/7GLrBt9/coin3.jpg",
-    //         "name": "Gold-color-bitcoin"
-    //     },
-    //     {
-    //         "_id": "4",
-    //         "img": "https://i.ibb.co/Qjr5gjB/coin4.jpg",
-    //         "name": "Gold-color-bitcoin"
-    //     },
-    // ]
+    const datas = [
+        {
+            "_id": "1",
+            "img": "https://i.ibb.co/rdFJFMR/coin1.jpg",
+            "name": "Gold-color-bitcoin"
+        },
+        {
+            "_id": "2",
+            "img": "https://i.ibb.co/gv0KbYb/coin2.jpg",
+            "name": "Gold-color-bitcoin"
+        },
+        {
+            "_id": "3",
+            "img": "https://i.ibb.co/7GLrBt9/coin3.jpg",
+            "name": "Gold-color-bitcoin"
+        },
+        {
+            "_id": "4",
+            "img": "https://i.ibb.co/Qjr5gjB/coin4.jpg",
+            "name": "Gold-color-bitcoin"
+        },
+    ]
 
-    useEffect(() => {
-        fetch(' https://aqueous-lowlands-30928.herokuapp.com/coins')
-            .then(response => response.json())
-            .then(json => setDatas(json))
-    }, [])
+    // useEffect(() => {
+    //     fetch(' http://localhost:5000/coins')
+    //         .then(response => response.json())
+    //         .then(json => setDatas(json))
+    // }, [])
 
 
     return (
@@ -50,7 +50,7 @@ const BuyCoin = () => {
                                 <img className='w-50' src={data.img} alt="" />
                             </div>
                             <h5 className='card-title'>Name: {data.name}</h5>
-                            <button></button>
+                            <button className='bg-danger px-4 py-1 text-white border-0'>Buy</button>
                         </div>
                     })
                 }

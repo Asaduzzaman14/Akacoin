@@ -11,6 +11,7 @@ import AddCard from './dashbord/AddCard';
 import MyCart from './dashbord/MyCart';
 import AllCoin from './dashbord/AllCoin';
 import AddCoin from './dashbord/AddCoin';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -30,14 +31,9 @@ function App() {
           <Route path='addcoin' element={<AddCoin />} ></Route>
 
         </Route>
-
-
-
-
-
-
-
       </Routes>
+
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,7 @@
 }
 
 .footer h4 {
-    color: rgba(14, 19, 58, 1);
+    color: #05092c;
     font-size: 16px;
     font-weight: 600;
     line-height: 32px;
@@ -11,7 +11,7 @@
 
 li {
     list-style: none;
-    color: rgba(91, 93, 109, 1);
+    color: #05092c;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;

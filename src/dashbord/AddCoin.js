@@ -9,7 +9,7 @@ const AddCoin = () => {
             img: e.target.link.value,
         }
 
-        fetch(' https://aqueous-lowlands-30928.herokuapp.com/coin', {
+        fetch(' http://localhost:5000/coin', {
             "method": "POST",
             headers: {
                 'Content-type': 'application/json',

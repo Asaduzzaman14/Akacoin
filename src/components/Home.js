@@ -14,8 +14,6 @@ const Home = () => {
             <Wallets />
             <BuyCoin />
             <Guide />
-
-            <Footer />
         </div>
     );
 };

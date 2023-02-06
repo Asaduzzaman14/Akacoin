@@ -40,8 +40,14 @@
     border-top-right-radius: 15px;
 }
 
+
+.wallet-card.rectangle3:nth-child(2) {
+    background-color: rgb(40, 36, 22);
+}
+
+
 .rectangle3:nth-child(2) {
-    background-color: #fff;
+    background-color: rgb(186, 17, 17);
 }
 
 
