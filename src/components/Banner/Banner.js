@@ -11,10 +11,10 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div className='banner-container '>
-            <div className='container'>
-                <div className='row '>
+            <div className='banner-section'>
+                <div className='row g-0'>
 
-                    <div className='banner-desc col-12 col-lg-6'>
+                    <div className=' col-12 col-lg-6'>
                         <div className='logo-container mt-5'>
                             <img className='logo' src={logo} alt="" />
                         </div>
@@ -27,13 +27,15 @@ const Banner = () => {
                         </div>
                     </div>
 
-                    <div className='col-12 col-lg-6  position-relative'>
-                        <img className='position-absolute end-0 top-20' src={Bitcoin2} alt="" />
+                    <div className='col-12 col-lg-6 '>
+                      <div className='position-relative'>
+                        <img className='position-absolute img-fluid end-0 top-20' src={Bitcoin2} alt="" />
 
-                        <img className='position-absolute start-0 top-20 ' src={Bitcoin1} alt="" />
-                        <img className='position-absolute top-50 start-30 ' src={Bitcoin3} alt="" />
-                        <img className='w-100' src={Plant} alt="" />
+                        <img className='position-absolute img-fluid start-0 top-20 ' src={Bitcoin1} alt="" />
+                        <img className='position-absolute img-fluid top-50 start-30 ' src={Bitcoin3} alt="" />
+                        <img className='w-100 img-fluid' src={Plant} alt="" />
 
+                      </div>
                     </div>
 
                 </div>

@@ -1,17 +1,18 @@
 .coin-card {
-    background-color: 05092c;
     align-items: center;
     text-align: center;
     width: 250px;
-    height: 200px;
+    height: 250px;
     padding: 10px;
     border-radius: 10px;
+    background-color: #020a51;
+    background-image: linear-gradient(to right, #1b0854ff, #a98416bd);
 }
 
 .card-title {
     font-size: 16px;
     color: rgb(255, 255, 255);
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .coin-card img {
